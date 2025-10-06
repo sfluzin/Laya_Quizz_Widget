@@ -1,0 +1,165 @@
+{
+  "normalize": {
+    "userAge": "number",
+
+    "bodyType": {
+      "Androgeneous": { "isAndrogeneous": true },
+      "Ectomorph": { "isEctoMorph": true },
+      "Ecto-Endomorph": { "isEctoEndomorph": true },
+      "Endomorph": { "isEndomorph": true }
+    },
+
+    "hasHyperEstrogenicProfile": {
+      "Yes": true,
+      "No": false
+    },
+
+    "hair_conditions": {
+      "I have thick hair on my chin and upper lips or jaw line (hirsutism)": { "hasChinHair": true },
+      "I have thick hair on my breast and belly or back (hirsutism)": { "hasChestHair": true },
+      "I have alopecia but the women of my family have normal hair": { "hasAlopecia": true },
+      "I have very thin hair and a lack of density in certain places or bald patches": { "hasThinHair": true },
+      "My hair are falling and are brittle": { "hasHairFall": true }
+    },
+
+    "skin_conditions": {
+      "My skin is generally dry": { "hasDrySkin": true },
+      "My skin is itchy, dry, sagging and thin": { "hasItchyDrySaggingSkin": true },
+      "I have constant acnea even though I'm an adult": { "hasAdultAcnea": true },
+      "I have acne on my chin and neck before my periods": { "hasChinNeckAcnea": true },
+      "I have an excess of sebum": { "hasOilySkin": true },
+      "I have melasma on my upper lips, forehead or cheeks": { "hasMelasma": true },
+      "My skin is constantly dry, irritated, or sensitive": { "hasSensitiveSkin": true },
+      "I get hot flashes and redness or aggravated rosacea": { "hasHotFlashesRednessRosacea": true },
+      "  My skin is very thin": { "hasThinSkin": true }
+    },
+
+    "cycle_profile": {
+      "28 Days": { "hasRegularCycle": true },
+      "Less than 21 Days": { "hasShortCycle": true },
+      "More than 28 Days": { "hasLongCycle": true },
+      "It depends": { "hasIrregularCycle": true }
+    },
+
+    "period_description": {
+      "Irregular blood flow and cramps": { "hasIrregularPeriodFlowCramps": true },
+      "Bleeding for more than 7 days or Hemorrhagic blood flow (Passing blood clots larger than a quarter, changing protection in less than 2 hours), & interference with daily life.": { "hasMenorrhagiaSymptoms": true },
+      "Absence of menstruation or (sometimes) missing more than 3 cycles in a row or more": { "hasMissingIrregularCycle": true },
+      "Excessively painful period cramps": { "hasPainfulPeriods": true },
+      "Regular, no cramps, normal flow": { "hasNormalPeriods": true }
+    },
+
+    "diagnosed_conditions": {
+      "Fibrocystic breast": { "hasFibrocysticBreasts": true },
+      "Fibroid(s) in the uterus": { "hasFibroids": true },
+      "Polycystic ovary syndrome": { "hasPCOS": true },
+      "Endometriosis": { "hasEndometriosis": true },
+      "Teratoma": { "hasTeratoma": true },
+      "Breast cancer": { "hasBreastCancer": true },
+      "Ovarian Cancer": { "hasOvarianCancer": true },
+      "Cervix Cancer": { "hasCervixCancer": true }
+    },
+
+    "estrogen_symptoms": {
+      "Hot flashes": { "hasHotFlashes": true },
+      "Permanent Weight gain despite eating normally.": { "hasPermanentWeightGain": true },
+      "Vaginal dryness (feel sore or itchy in and around your vagina)": { "hasVaginalDryness": true },
+      "Recurrent fatigue and trouble sleeping (Insomnia)": { "hasRecurrentFatigueTroubleSleeping": true },
+      "General constant decreased sex drive": { "hasDecreasedSexDrive": true },
+      "You keep getting Urinary Tract Infections (UTIs)": { "hasRecurrentUTIs": true }
+    },
+
+    "protection_preferences": {
+      "Tampons with applicator": { "prefersTamponsWithApplicator": true },
+      "Tampons without applicator.": { "prefersTamponsWithoutApplicator": true },
+      "Pads": { "prefersPads": true },
+      "Cup": { "prefersCup": true },
+      "Menstrual underwear": { "prefersMenstrualUnderwear": true },
+      "I go freeflow": { "prefersFreeFlow": true }
+    },
+
+    "flow_level": {
+      "Light": { "hasLightFlow": true },
+      "Average": { "hasAverageFlow": true },
+      "Super": { "hasSuperFlow": true },
+      "Maxi": { "hasMaxiFlow": true }
+    },
+
+    "crampSeverity": "number",
+
+    "mental_health_dx": {
+      "Bipolar disorder": { "hasBipolarDisorder": true },
+      "Borderline Personality Disorder": { "hasBorderlinePersonalityDisorder": true },
+      "Diagnosed Major Depression disorder or episode": { "isDepressive": true },
+      "Generalized Anxiety Disorder (GAD) or Panic Disorder": { "hasAnxietyDisorder": true },
+      "Chronic fatigue syndrome or fibromyalgia": { "hasFibromyalgia": true }
+    },
+
+    "treatments": {
+      "Hormone contraceptive (birth control pill, IUD, hormonal implant, hormonal patch).": { "takesBirthControlPill": true },
+      "Antidepressants (SSRIs, SNRIs, tricyclics)": { "takesAntidepressants": true },
+      "Anxiolytics medication": { "takesAnxiolytics": true },
+      "Fertility treatments (gonadotropine, clomiphen...": { "takesFertilityTreatment": true },
+      "Stimulants (ADHD meds; amphetamines, methylphenidate...)": { "takesStimulants": true },
+      "Antiepileptics (valproate, carbamazepine)": { "takesAntiepileptics": true },
+      "Betablockers (for blood pressure, migraines)": { "takesBetaBlockers": true },
+      "Thyroid hormone replacement or antithyroid drugs": { "takesThyroidDrugs": true },
+      "Glucocorticoids (prednisone, dexamethasone)": { "takesGlucocorticoids": true },
+      "Mood stabilizers & antipsychotics": { "takesMoodStabilizers": true }
+    },
+
+    "pms_symptoms": {
+      "Mood swings": { "hasMoodSwings": true },
+      "Sadness": { "hasSadness": true },
+      "BrainFog": { "hasBrainFog": true },
+      "Demotivation": { "hasDemotivation": true },
+      "Migraine": { "hasMigraine": true },
+      "Bloating": { "hasBloating": true },
+      "Breast tenderness": { "hasBreastTenderness": true },
+      "Low anxiety": { "hasLowAnxiety": true },
+      "Food cravings": { "hasFoodCravings": true },
+      "Irritability": { "hasIrritability": true },
+      "Tiredness": { "hasTiredness": true },
+      "Trouble sleeping": { "hasTroubleSleeping": true },
+      "Hormonal acne (chin, one big pimple)": { "hasHormonalAcne": true },
+      "Hot flashes": { "hasHotFlashes": true },
+      "Low or high sex drive": { "hasLowOrHighSexDrive": true },
+      "Digestive track issues": { "hasDigestiveIssues": true },
+      "Back pain": { "hasBackPain": true },
+      "I have no symptoms": { "hasNoSymptoms": true }
+    },
+
+    "pmdd_symptoms": {
+      "Extreme Mood swings": { "hasExtremeMoodSwings": true },
+      "Feeling very tensed": { "isHighlytensed": true },
+      "Uncontrollable anger": { "hasUncontrollableAnger": true },
+      "Lasting feeling of deep sadness or depression": { "hasDepression": true },
+      "High anxiety or panic attack": { "hasPanicAttackOrAnxiety": true },
+      "Decreased interest in usual activities": { "hasDecreasedInterest": true },
+      "Great difficulty to focus": { "hasDifficultyToFocus": true },
+      "Lethargy, constant lack of energy": { "hasLethargy": true },
+      "Binge eating or intense food cravings": { "hasBingeEatingBehavior": true },
+      "Insomnia or Hypersomnia": { "hasInsomniaOrHypersomnia": true },
+      "Feeling overwhelmed or out of control": { "isOutOfControl": true },
+      "Joint or muscle pain (sprain, restless syndrome increased, inflammed articulations...)": { "hasJointOrMusclePain": true },
+      "Heart issues (tachycardia,  skipping beats, tight chest...)": { "hasHeartIssues": true },
+      "Weight gain or sensation of bloating.": { "hasWaterRetention": true },
+      "Painful breast tenderness or swelling": { "hasBreastTendernessOrSwelling": true },
+      "Crying spells": { "hasCryingSpells": true },
+      "Increased sensitivity to rejection": { "hasIncreasedSensitivityToRejection": true },
+      "Lasting irritability or anger": { "hasLastingAngerIrritability": true },
+      "Increased interpersonal conflicts": { "hasIncreasedInterpersonalConflicts": true },
+      "Suicidal thoughts, self-harm thoughts": { "hasSuicidalThoughts": true },
+      "Social withdrawal": { "hasSocialWithdrawal": true },
+      "Lasting hopelessness": { "hasLastingHopelessness": true },
+      "Dizziness or fainting": { "hasDizzinessOrFainting": true },
+      "Constantly on edge": { "isConstantlyOnEdge": true }
+    },
+
+    "pmdd_criteria": {
+      "Symptoms appear 1 up to 2 weeks before your periods, start to improve within a few days after the onset of menses and become minimal or absent in the week postmenses.": { "areSymptomsRelatedToMenstrualCycle": true },
+      "Symptoms were present for at least two consecutive cycles.": { "areSymptomsPresentInTwoConsecutiveCycles": true },
+      "Symptoms are associated to clinically significant distress or negative interference with work, social activities and relationships.": { "hasAggravatedLifeInterference": true }
+    }
+  }
+}

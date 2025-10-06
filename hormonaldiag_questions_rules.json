@@ -1,0 +1,513 @@
+
+{
+  "rules": [
+ 
+    {
+       "if": { "isAndrogeneous": { "==": true } },
+       "score": { "androx": 1 }
+    },
+    {
+       "if": { "isEctoMorph": { "==": true } },
+       "score": { "estrolack": 1 }
+    },
+    {
+      "if": {
+        "or": [
+          { "isEctoEndomorph": { "==": true } },
+          { "isEndomorph": { "==": true } }
+        ]
+      },
+      "score": { "estrox": 1 }
+    },
+
+  
+     {
+    "if": {
+        "or": [
+          { "hasThinHair": { "==": true } },
+          { "hasHairFall": { "==": true } }
+        ]
+      },
+      "score": { "estrolack": 2 }
+    },
+
+      {
+    "if": {
+        "or": [
+          { "hasDrySkin": { "==": true } },
+          { "hasThinSkin": { "==": true } },
+           { "hasItchyDrySaggingSkin": { "==": true } },
+           { "hasSensitiveSkin": { "==": true } }
+        ]
+      },
+      "score": { "estrolack": 1 }
+    },
+  {
+    "if": {
+        "or": [
+          { "hasChinHair": { "==": true } },
+          { "hasChestHair": { "==": true } },
+           { "hasAlopecia": { "==": true } }
+        ]
+      },
+      "score": { "androx": 3 }
+    },
+  {
+    "if": {
+        "and": [
+          { "hasOilySkin": { "==": true } },
+          { "userAge": { ">": 25 } }
+        ]
+      },
+      "score": { "androx": 1 }
+    },
+
+     {
+    "if": {
+        "or": [
+          { "hasAdultAcnea": { "==": true } },
+          { "hasChinNeckAcnea": { "==": true } }
+        ]
+      },
+      "score": { "androx": 1 }
+    },
+   {
+       "if": { "hasMelasma": { "==": true } },
+       "score": { "estrox": 1 }
+    },
+{
+       "if": { "hasHotFlashesRednessRosacea": { "==": true } },
+       "score": { "estrolack": 2 }
+    },
+{
+       "if": { "hasMenorrhagiaSymptoms": { "==": true } },
+       "score": { "menorrhagia": 3 }
+    },
+    {
+       "if": { "hasPainfulPeriods": { "==": true } },
+       "score": { "dysmenorrhea": 3 }
+    },
+     {
+       "if": { "hasMissingIrregularCycle": { "==": true } },
+       "score": { "amenorrhea": 3 }
+    },
+       {
+    "if": {
+        "or": [
+          { "hasFibrocysticBreasts": { "==": true } },
+          { "hasFibroids": { "==": true } }
+        ]
+      },
+      "score": { "estrox": 1 }
+    },
+  {
+       "if": { "hasEndometriosis": { "==": true } },
+       "score": { "estrox": 4 }
+    },
+      {
+       "if": { "hasPCOS": { "==": true } },
+       "multiply": { "estrolack": 0 }
+    },
+
+  {
+    "if": {
+        "and": [
+          { "hasHotFlashes": { "==": true } },
+          { "hasPermanentWeightGain": { "==": true } },
+          { "hasVaginalDryness": { "==": true } },
+          { "hasRecurrentFatigueTroubleSleeping": { "==": true } }
+          ]
+      },
+      "score": { "estrolack": 2 }
+    },
+ {
+    "if": {"crampSeverity": { ">=": 5 } },
+      "score": { "dysmenorrhea": 3 }
+    },
+ 
+       {
+       "if": { "hasHyperEstrogenicProfile": { "==": true } },
+       "score": { "estrox": 1 }
+    },
+
+{
+    "if": {
+        "or": [
+          { "takesAntidepressants": { "==": true } },
+          { "takesAnxiolytics": { "==": true } },
+          { "takesFertilityTreatment": { "==": true } },
+          { "takesStimulants": { "==": true } },
+          { "takesAntiepileptics": { "==": true } },
+          { "takesBetaBlockers": { "==": true } },
+          { "takesThyroidDrugs": { "==": true } },
+          { "takesGlucocorticoids": { "==": true } },
+          { "takesMoodStabilizers": { "==": true } }
+        ]
+      },
+      "set": { "isNotRelatedToDrug": false }
+    },
+{
+    "if": {
+        "or": [
+          { "hasBipolarDisorder": { "==": true } },
+          { "hasBorderlinePersonalityDisorder": { "==": true } },
+          { "isDepressive": { "==": true } },
+          { "hasAnxietyDisorder": { "==": true } },
+          { "hasFibromyalgia": { "==": true } }
+        ]
+      },
+      "set": { "hasPreexistingCondition": true }
+    },
+
+ {      
+      "if": { "hasBloating": { "==": true } },
+      "score": { "pms": 1 }
+    },
+ {      
+      "if": { "hasBreastTenderness": { "==": true } },
+      "score": { "pms": 1 }
+    },
+ {      
+      "if": { "hasMoodSwings": { "==": true } },
+      "score": { "pms": 1 }
+   },
+     {      
+      "if": { "hasDemotivation": { "==": true } },
+      "score": { "pms": 1 }
+    },
+     {      
+      "if": { "hasBrainFog": { "==": true } },
+      "score": { "pms": 1 }
+    },
+
+     {      
+      "if": { "hasMigraine": { "==": true } },
+      "score": { "pms": 1 }
+    },
+ {      
+      "if": { "hasLowAnxiety": { "==": true } },
+      "score": { "pms": 1 }
+    },
+ {      
+      "if": { "hasFoodCravings": { "==": true } },
+      "score": { "pms": 1 }
+   },
+     {      
+      "if": { "hasIrritability": { "==": true } },
+      "score": { "pms": 1 }
+    },
+     {      
+      "if": { "hasTiredness": { "==": true } },
+      "score": { "pms": 1 }
+    },
+        
+     {      
+      "if": { "hasTroubleSleeping": { "==": true } },
+      "score": { "pms": 1 }
+    },
+ {      
+      "if": { "hasHormonalAcne": { "==": true } },
+      "score": { "pms": 1 }
+    },
+ {      
+      "if": { "hasHotFlashes": { "==": true } },
+      "score": { "pms": 1 }
+   },
+     {      
+      "if": { "hasLowOrHighSexDrive": { "==": true } },
+      "score": { "pms": 1 }
+    },
+     {      
+      "if": { "hasDigestiveIssues": { "==": true } },
+      "score": { "pms": 1 }
+},
+     {      
+      "if": { "hasBackPain": { "==": true } },
+      "score": { "pms": 1 }
+    },
+      {      
+      "if": { "hasSadness": { "==": true } },
+      "score": { "pms": 1 }
+    },
+{      
+      "if": { "hasNoSymptoms": { "==": true } },
+      "set": { "pms": 0}
+    },
+  
+     {
+    "if": {"hasExtremeMoodSwings": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+ {
+    "if": {"hasUncontrollableAnger": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+     {
+    "if": {"hasDepression": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+     {
+    "if": {"hasPanicAttackOrAnxiety": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+  {
+    "if": {"hasDecreasedInterest": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+      {
+    "if": {"hasDifficultyToFocus": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+      {
+    "if": {"hasLethargy": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+      {
+    "if": {"hasBingeEatingBehavior": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+      {
+    "if": {"hasInsomniaOrHypersomnia": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+      {
+    "if": {"isOutOfControl": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+      {
+    "if": {"hasJointOrMusclePain": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+      {
+    "if": {"hasHeartIssues": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+      {
+    "if": {"hasWaterRetention": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+  {
+    "if": {"hasBreastTendernessOrSwelling": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+     {
+    "if": {"hasCryingSpells": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+     {
+    "if": {"isSensitiveToRejection": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+     {
+    "if": {"hasLastingAngerIrritability": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+ {
+    "if": {"hasIncreasedInterpersonalConflicts": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+ {
+    "if": {"hasSuicidalThoughts": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+     {
+    "if": {"hasSocialWithdrawal": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+     {
+    "if": {"hasLastingHopelessness": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+     {
+    "if": {"isHighlytensed": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+{
+    "if": {"hasDizzinessOrFainting": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+     {
+    "if": {"isConstantlyOnEdge": { "==": true } },
+      "score": { "pmdd": 1 }
+    },
+
+     {
+    "if": {
+        "or": [
+          { "hasExtremeMoodSwings": { "==": true } },
+          { "hasCryingSpells": { "==": true } },
+          { "hasIncreasedSensitivityToRejection": { "==": true } },
+          { "hasUncontrollableAnger": { "==": true } },
+          { "hasLastingAngerIrritability": { "==": true } },
+          { "hasIncreasedInterpersonalConflicts": { "==": true } },
+          { "hasSuicidalThoughts": { "==": true } },
+          { "hasSocialWithdrawal": { "==": true } },
+          { "hasLastingHopelessness": { "==": true } },
+          { "isHighlytensed": { "==": true } },
+          { "isConstantlyOnEdge": { "==": true } },
+          { "hasDepression": { "==": true } },
+          { "hasPanicAttackOrAnxiety": { "==": true } }
+        ]
+      },
+      "set": { "pmdd_MentalComponent": true }
+    },
+{
+"if": {
+        "or": [
+          { "hasDecreasedInterest": { "==": true } },
+          { "hasLethargy": { "==": true } },
+          { "hasBingeEatingBehavior": { "==": true } },
+          { "hasInsomniaOrHypersomnia": { "==": true } },
+
+          { "isOutOfControl": { "==": true } },
+          { "hasJointOrMusclePain": { "==": true } },
+          { "hasHeartIssues": { "==": true } },
+          { "hasWaterRetention": { "==": true } },
+
+          { "hasBreastTendernessOrSwelling": { "==": true } },
+          { "hasDizzinessOrFainting": { "==": true } }
+        ]
+      },
+      "set": { "pmdd_PhysicalComponent": true }
+    },
+    {
+    "if": {
+        "and": [
+          { "hasAggravatedLifeInterference": { "==": true } },
+          { "areSymptomsRelatedToMenstrualCycle": { "==": true } },
+          { "areSymptomsPresentInTwoConsecutiveCycles": { "==": true } },
+          { "isNotRelatedToDrug": { "==": true } }
+          ]
+      },
+      "set": { "isRelatedToMenstrualCycle": true }
+    },
+ {
+    "if": {
+        "and": [
+          { "pmdd_PhysicalComponent": { "==": true } },
+          { "pmdd_MentalComponent": { "==": true } },
+          { "isRelatedToMenstrualCycle": { "==": true } },
+          { "pmdd": { ">=": 5 } }
+          ]
+      },
+      "set": { "pmddDiagnostic": true }
+    }
+
+  ], 
+  
+  "diagnostics": [
+    {
+      "condition": "pms",
+      "criteria": {
+        "and": [
+          { "pms": { ">=": 2 } },
+          { "pmddDiagnostic": { "==": false } }
+         
+        ]
+      },
+      "confidence": 0.8,
+      "product_tags": ["pms-support", "mood-balance"]
+    },
+
+     {
+      "condition": "pmdd",
+      "criteria": {
+        "and": [
+           { "pmddDiagnostic": { "==": true } }
+          ]
+      },
+      "confidence": 0.8,
+      "product_tags": ["pmdd-support", "care"]
+    },
+
+ {
+      "condition": "AggravatedPmdd",
+      "criteria": {
+        "and": [
+          { "pmdd": { ">=": 5 } },
+           { "pmdd_MentalComponent": { "==": true } },
+          { "pmdd_PhysicalComponent": { "==": true } }
+        ]
+      },
+      "confidence": 0.8,
+      "product_tags": ["pmdd-support", "care"]
+    },
+
+
+     {
+      "condition": "estrox",
+      "criteria": {
+        "and": [
+          { "estrox": { ">=": 3 } },
+          { "estrolack": { "<": 3 } }
+        ]
+      },
+      "confidence": 0.8,
+      "product_tags": ["estrox", "detox", "care"]
+    },
+
+     {
+      "condition": "androx",
+      "criteria": 
+          { "androx": { ">=": 3 } },
+      "confidence": 0.8,
+      "product_tags": ["androx", "detox", "care"]
+    },
+
+     {
+      "condition": "estrolack",
+      "criteria": {
+        "and": [
+          { "estrox": { "<": 3 } },
+          { "estrolack": { ">=": 3 } }
+        ]
+      },
+      "confidence": 0.8,
+      "product_tags": ["estrolack", "care"]
+    },
+    {
+      "condition": "dysmenorrhea",
+      "criteria":         
+          { "crampSeverity": { ">=": 5 } },      
+       "confidence": 0.8,
+      "product_tags": ["relief", "mood-balance"]
+    },
+
+{
+      "condition": "amenorrhea",
+      "criteria": 
+          { "amenorrhea": { ">=": 2 } },        
+      "confidence": 0.8,
+      "product_tags": ["estrolack", "care", "detox", "comeback"]
+    },
+
+    {
+      "condition": "menorrhagia",
+      "criteria": { "menorrhagia": { ">=": 2 } },
+      "confidence": 0.9,
+      "product_tags": ["care", "detox", "reduce"]
+    },
+
+        {
+      "condition": "menopause",
+      "criteria": { "menorrhagia": { ">=": 2 } },
+      "confidence": 0.9,
+      "product_tags": ["estrolack", "care"]
+    },
+
+    
+        {
+      "condition": "perimenopause",
+      "criteria": { "menorrhagia": { ">=": 2 } },
+      "confidence": 0.9,
+      "product_tags": ["estrolack", "care"]
+    }
+  ]
+}

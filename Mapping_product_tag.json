@@ -1,0 +1,43 @@
+
+
+{
+  "pms": {
+    "label": "Premenstrual Syndrome",
+    "product_tags": ["pms", "hormonaltea"]
+  },
+
+  "pmdd": {
+    "label": "Premenstrual Dysphoric Disorder",
+    "product_tags": ["pmdd", "hormonaltea"]
+  },
+
+   "lackestrogen": {
+    "label": "Lack of estrogen",
+    "product_tags": ["lackestrogen", "hormonaltea", "menopause", "perimenopause"]
+  },
+  
+ "xestrogen": {
+    "label": "Excess of estrogen",
+    "product_tags": ["xestrogen", "hormonaltea", "supporttea"]
+  },
+
+ "xandrogen": {
+    "label": "Excess of androgen",
+    "product_tags": ["xandrogen", "hormonaltea", "pcos", "amenorrhea"]
+  },
+
+  "amenorrhea": {
+    "label": "Lack of Periods (amenorrhea)",
+    "product_tags": ["periodtea", "iron-support"]
+  },
+  "menorrhagia": {
+    "label": "Heavy Periods (Menorrhagia)",
+    "product_tags": ["periodtea", "menorrhagia"]
+  },
+  "dysmenorrhea": {
+    "label": "Painful Periods (dysmenorrhea)",
+    "product_tags": ["dysmenorrhea", "periodtea"]
+  }
+
+
+}
